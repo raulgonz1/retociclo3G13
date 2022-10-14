@@ -6,6 +6,6 @@ import org.springframework.data.repository.CrudRepository;
 
 import javax.persistence.Id;
 
-public interface MessageCrudRepository extends CrudRepository <Message, Id> {
-    Object getAll();
+public interface MessageCrudRepository extends CrudRepository <Message, Integer> {
+
 }

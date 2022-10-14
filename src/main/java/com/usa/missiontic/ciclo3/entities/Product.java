@@ -13,7 +13,7 @@ import java.io.Serializable;
     @GeneratedValue (strategy = GenerationType.IDENTITY)
     private Integer id;
     private String name;
-    private Integer year;
+    private Integer years;
 
     @ManyToOne
     @JoinColumn(name="categoryId")
@@ -37,11 +37,11 @@ import java.io.Serializable;
     }
 
     public Integer getYear() {
-        return year;
+        return years;
     }
 
-    public void setYear(Integer year) {
-        this.year = year;
+    public void setYear(Integer years) {
+        this.years = years;
     }
 
     public Category getCategory() {

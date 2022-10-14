@@ -15,7 +15,7 @@ public class ComputerRepository {
     private ComputerCrudRepository computerCrudRepository;
 
     public List<Computer> getAll() {
-        return (List<Computer>) computerCrudRepository.getAll();
+        return (List<Computer>) computerCrudRepository.findAll();
     }
     public Optional<Computer> getComputer (int id) {
         return computerCrudRepository.findById(id);

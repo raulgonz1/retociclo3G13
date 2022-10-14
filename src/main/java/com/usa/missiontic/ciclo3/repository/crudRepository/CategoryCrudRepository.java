@@ -5,5 +5,5 @@ import com.usa.missiontic.ciclo3.entities.Product;
 import org.springframework.data.repository.CrudRepository;
 
 public interface CategoryCrudRepository extends CrudRepository <Category, Integer> {
-    Object getAll();
+
 }

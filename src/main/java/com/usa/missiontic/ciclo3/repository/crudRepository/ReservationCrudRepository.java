@@ -5,5 +5,5 @@ import com.usa.missiontic.ciclo3.entities.Reservation;
 import org.springframework.data.repository.CrudRepository;
 
 public interface ReservationCrudRepository extends CrudRepository <Reservation, Integer> {
-    Object getAll();
+
 }

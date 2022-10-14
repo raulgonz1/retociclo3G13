@@ -15,7 +15,7 @@ public class ProductRepository {
     private ProductCrudRepository productCrudRepository;
 
     public List<Product> getAll() {
-        return (List<Product>) productCrudRepository.getAll();
+        return (List<Product>) productCrudRepository.findAll();
     }
     public Optional<Product> getProduct (int id) {
         return productCrudRepository.findById(id);
